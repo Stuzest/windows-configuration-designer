@@ -13,7 +13,7 @@ $ProgressPreference = $ProgressPreference_bk
 
 
 # configure UI language
-$language = "hu-HU"
+$language = "en-GB"
 
 $current_preferred_ui_lanague = Get-SystemPreferredUILanguage
 
