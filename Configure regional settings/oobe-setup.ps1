@@ -11,13 +11,13 @@ gci -File | ? { $_.Name -notlike "oobe_*" } | % {
 }
 
 # Create local admin account
-$local_user = @{
-    Name                 = 'admin'
-    NoPassword           = $true
-}
-$user = New-LocalUser @local_user 
-$user | Set-LocalUser -PasswordNeverExpires $true 
-$user | Add-LocalGroupMember -Group "Administrators"
+# $local_user = @{
+#     Name                 = 'admin'
+#     NoPassword           = $true
+# }
+# $user = New-LocalUser @local_user 
+# $user | Set-LocalUser -PasswordNeverExpires $true 
+# $user | Add-LocalGroupMember -Group "Administrators"
 
 # Skip "Privacy Experiance" and configure RunOnce
 $settings =
