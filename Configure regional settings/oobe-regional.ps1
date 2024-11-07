@@ -3,7 +3,7 @@ Get-TimeZone -ListAvailable | ?{$_.DisplayName -like "*Budapest*"} | Set-TimeZon
 
 # configure regional/locale/keyboard settings
 # Hungarian
-$region = "hu-HU"
+$region = "en-GB"
 
 Set-Culture $region
 Set-WinSystemLocale $region
